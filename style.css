@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(152,137,239);
+    color: rgb(255, 255, 255) ;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(balakumaran.jpg);
+    background-size: cover;
+    background-position: center;
+}.container{
+    padding:10px 10%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    /*text-align:right;*/
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    color:rgb(255, 255, 255);
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height:3px;
+    background: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom:-5px;
+    transition: 0.4s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #ff0000;
+}
+  
+/* about section */
+.jaya{
+    background-color:  rgb(157, 128, 245);
+    margin: 0;
+    text-align: center;
+    color: #d1c3c3;
+
+ }
+#about {
+    padding-top: 5%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(157, 128, 245);
+}
+.circle {
+    width: 288px;
+    height: 367px;
+    background: rgb(121 96 199);
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 5px 12px rgb(42 38 38 / 70%);
+    margin-bottom: 3%;
+    margin-top: 9%;
+    transition: 1s;
+}
+.circle img{
+    position: absolute;
+    height: 360px;
+    top: 4px;
+    left: 4px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 30px 50px rgba(0 0 0 0.4));
+    transition: 1s;
+}
+.circle:hover{
+    width: 700px;
+    height: 300;
+    border-radius: 3px;
+    transition: 1s;
+}
+.circle:hover img{
+    position: absolute;
+    top:1%;
+    left:1%;
+    border-radius: 3px;
+    transition: 1s;
+}
+
+.circle:hover .content{
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    width: 50%;
+    color: white;
+    opacity: 1;
+    transition: 1s;
+}
+.circle .content{
+    opacity: 0;
+}
+
+@media screen and (max-width:576px) {
+    .circle {
+        width: 288px;
+        height: 367px;
+        background: rgb(148, 121, 221);
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 0px 5px 12px rgb(42 38 38 / 70%);
+        margin-bottom: 3%;
+        margin-top: 8%;
+        transition: 1s;
+    }
+    .circle:hover img{
+        position: absolute;
+        top:0%;
+        left:12%;
+        border-radius: 3px;
+        transition: 1s;
+    }
+    .circle:hover{
+        width: 400px;
+        height: 600px;
+        border-radius: 3px;
+        transition: 1s;
+    }
+    .circle:hover .content{
+        position: absolute;
+        top: 62%;
+        right: 0%;
+        width: 100%;
+        color: black;
+        opacity: 1;
+        transition: 1s;
+        padding: 10px;
+    }
+    .circle .content{
+        opacity: 0;
+    }
+}
+.outline1{
+    padding-top: 5%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(157, 128, 245);
+}
+.timeline {
+    width: 70%;
+    left: 10%;
+    background-color: rgb(137, 137, 206);
+    color: rgb(255, 255, 255);
+    padding: 50px 50px;
+    box-shadow: 2px 2px 10px gray;
+    margin-bottom: 2%;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .timeline ul {
+        list-style-type: none;
+        border-left: 2px solid black;
+        padding: 10px 5px;
+    }
+
+    .timeline ul li {
+        padding: 20px 20px;
+        position: relative;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .timeline ul li span {
+        display: inline-block;
+        background-color: #1685b8;
+        border-radius: 25px;
+        padding: 2px 5px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .timeline ul li .content h3 {
+        color: #34ace0;
+        font-size: 24px;
+        padding-top: 5px;
+    }
+
+    .timeline ul li .content p {
+        padding: 5px 0px 15px 0px;
+        font-size: 20px;
+    }
+
+    .timeline ul li:before {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: #34ace0;
+        border-radius: 50%;
+        left: -11px;
+        top: 28px;
+        transition: .5s;
+    }
+
+    .timeline ul li:hover {
+        background-color: rgb(17, 0, 255);
+        color: black;
+    }
+
+    .timeline ul li:hover:before {
+        background-color: rgb(140, 0, 255);
+        box-shadow: 0px 0px 10px 2px rgb(177, 20, 250);
+    }
+
+    @media (max-width:300px) {
+        .timeline {
+            width: 100%;
+            padding: 30px 5px 30px 10px;
+        }
+
+        .timeline ul li .content h3 {
+            color: #34ace0;
+            font-size: 15px;
+        }
+
+    }
+
+ /* Skills Section */
+
+#skills span{
+    color: #000000;
+    font-size: 60px;
+    font-family: initial;
+    font-weight: bolder;
+}
+#skills:hover span{
+    box-shadow: 2px 4px 5px rgb(15, 15, 15) , -2px -2px 5px rgb(61, 55, 55);
+}
+
+#skills{
+    padding-top: 5%;
+    background-color: rgb(170, 149, 218);
+}
+
+label{
+    font-size: 25px;
+}
+.progress{
+    height: 30px !important;
+    box-shadow: 2px 4px 5px gray , -2px -2px 5px rgb(221, 150, 150);
+}
+.progress:hover{
+    box-shadow: 2px 4px 5px rgb(15, 15, 15) , -2px -2px 5px rgb(61, 55, 55);
+}
+ 
+/* content section*/
+
+#contact1{
+    background: #001660;
+}
+.container1{
+    width: 100%;
+    height: 100vh;
+    background: #001660;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h3{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input ,textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+
+form button{
+    padding: 15px;
+    background: #ff5361;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    padding: 20px auto 0;
+}
+
+/* Project Section*/
+
+#html-spinner{
+    width:40px;
+    height:40px;
+    border:4px solid #fcd779;
+    border-top:4px solid white;
+    border-radius:50%;
+  }
+  
+  #html-spinner, #svg-spinner{
+    -webkit-transition-property: -webkit-transform;
+     -webkit-transition-duration:1.2s;
+    -webkit-animation-name: rotate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    
+    -moz-transition-property: -moz-transform;
+    -moz-animation-name: rotate; 
+    -moz-animation-duration: 1.2s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    
+    transition-property: transform;
+    animation-name: rotate; 
+    animation-duration: 1.2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @-webkit-keyframes rotate {
+      from {-webkit-transform: rotate(0deg);}
+      to {-webkit-transform: rotate(360deg);}
+  }
+  
+  @-moz-keyframes rotate {
+      from {-moz-transform: rotate(0deg);}
+      to {-moz-transform: rotate(360deg);}
+  }
+  
+  @keyframes rotate {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+  }
+  
+  
+  /* Rest of page style*/
+  body{
+    background:black !important;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color:#393D3D;
+  }
+  
+  #container{
+    width:90%;
+    max-width:700px;
+    margin:1em auto;
+    position:relative;
+  }
+  
+  /* spinner positioning */
+  
+  #html-spinner, #svg-spinner{
+    position:absolute;
+    top:80px;
+    margin-left:-24px;
+  }
+  
+  #html-spinner{
+    left:25%; 
+  }
+  
+  #svg-spinner{
+    left:75%; 
+  }
+  
+  #html-para,#svg-para{
+    position:absolute;
+    top:100px;
+    width:40%;
+    padding:5%;
+    text-align:center;
+    left: 20px;
+    color: #ff0000;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  #svg-para{
+    left:50%;
+  }
+
+  
